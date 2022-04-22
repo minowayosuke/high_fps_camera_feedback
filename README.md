@@ -1,7 +1,7 @@
 # high_fps_camera_feedback
 Code for our paper: "textexttextext" doi???????????????
 
-The code is for [OpenMV camera unit](https://openmv.io/). You can get images at a high fps (possibly > 500 fps) with real-time processing. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
+The micropython code is targeted for [OpenMV camera unit](https://openmv.io/). You can get images at a high fps (possibly > 500 fps) with real-time processing. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
 
 The actual fps strongly depends on the size of the region-of-interst and the content of the image-processing.
 
@@ -17,4 +17,5 @@ To get higher fps, you need to restrict the region of interst. For example, we c
 
 You should choose an appropriate region of interest from the default pixel 640x480(VGA).
 
-###
+### Region of interst
+
