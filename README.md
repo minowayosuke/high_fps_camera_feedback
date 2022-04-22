@@ -25,4 +25,8 @@ sensor.__write_reg(0x04,W)              # region of interest Width, 1-752
 ~~~
 where the coordinate origin is at the lower right corner.
 
-After setting 
+After setting the region of interest, you can get the image by
+```
+image = sensor.snapshot()          # Take a picture and return the image.
+```
+However, the derived image size is still 640x480. Each row of the region of interest is sequentially 
