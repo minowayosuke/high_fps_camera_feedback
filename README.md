@@ -29,4 +29,8 @@ After setting the region of interest, you can get the image by
 ```
 image = sensor.snapshot()          # Take a picture and return the image.
 ```
-However, the derived image size is still 640x480. Each row of the region of interest is sequentially 
+However, the derived image size is still 640x480. The actual image in the region of interest is reshpaed to 640x480 (just like as numpy's reshape function with zero-padding). So, it may be convinient to set windowing before getting the image. As far as we know the smallest window we can set without error is 640x8. So,
+```
+sensor.set_windowing((0,0,640,8)) 
+```
+
