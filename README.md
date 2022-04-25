@@ -36,4 +36,4 @@ sensor.set_windowing((0,0,640,8))
 before `sensor.snapshot()`.
 
 ### Image processing
-You can use MicroPython and its libraries for image processing. Note that MicroPython has a limited functionality compared to normal Python. We use a micropython library called ulab, the MicroPython's equivalent of numpy. 
+You can use MicroPython and its libraries for image processing. Note that MicroPython has a limited functionality compared to normal Python. We used a micropython library called ulab, the MicroPython's equivalent of numpy. 
