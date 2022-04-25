@@ -3,7 +3,7 @@ Code for our paper: "textexttextext" doi???????????????
 
 The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). You can get images at a high fps (possibly > 500 fps) with real-time processing. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
 
-The actual fps strongly depends on the size of the region-of-interst and the content of the image-processing.
+The actual fps strongly depends on the size of the region-of-interst and the implementation of the image-processing.
 
 ## Hardware
 We used OpenMV Cam H7 R1 and Global Shutter Camera Module for the experiment in the paper. We recommend to use the updated version of the OpenMV cam since the version we used is not available anymore. The basic idea of the code should be working also in the newer OpenMV cam moudle although we did not test the code in the newer one.
