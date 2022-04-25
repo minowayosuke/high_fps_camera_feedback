@@ -36,4 +36,14 @@ sensor.set_windowing((0,0,640,8))
 before `sensor.snapshot()`.
 
 ### Image processing
-You can use MicroPython and its libraries for image processing. Note that MicroPython has a limited functionality compared to normal Python. We used a micropython library called ulab, the MicroPython's equivalent of numpy. ulab's capability strongly depends on the firmware version. Also, some features of ulab seemed to be slower than expected. So, we used onlly a part of its functionality. We determined the levitated nanoparticle position using the centroid scheme as described in our paper.  
+You can use MicroPython and its libraries for image processing. Note that MicroPython has a limited functionality compared to normal Python. We used a micropython library called ulab, the MicroPython's equivalent of numpy. ulab's capability strongly depends on the firmware version. Also, some features of ulab seemed to be slower than expected. So, we used onlly a part of its functionality. We determined the levitated nanoparticle position using the centroid scheme as described in our paper. 
+
+### Code examples
+?????? is the code for the feedback cooling used in the paper.
+
+?????? is a minimal code example for high speed image capturing.
+
+Note that these codes are tested only under the environment specified above.
+
+Finally, ?????? is a minimal code example for high speed operation tested in the ???????? just for reference. The code was not used in our paper. We didn't conduct in-depth-test and don't gurantee its functioning.
+
