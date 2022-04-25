@@ -13,7 +13,7 @@ Firmware version used in the paper was v3.5.2. IDE version was v2.4.0.
 
 ## Software
 ### Main idea to get higher fps
-To get higher fps, you need to restrict the region of interst. For example, we can reach well above 1000 fps for 32x20 pixels without any image processing. However, it's not recommended because the DAC is working only at 1khz and above-1-khz speed is useless for most of the purpose. Additionally, we experienced a hung-up of IDE often for > 1000fps. We didn't check whether it's just a problem of IDE or a some kind of thermal runaway of chip. We never expereienced a such behavior well below 1000 fps. Possibly, this issue may have been or will be fixed for newer version.
+To get higher fps, you need to restrict the region of interst. For example, we can reach well above 1000 fps for 32x20 pixels without any image processing. However, it's not recommended to operate in such a high speed because the DAC is working only at 1khz and above-1-khz speed is useless for most of the purpose. Additionally, we experienced a hung-up of IDE often for > 1000fps. We didn't check whether it's just a problem of IDE or a some kind of thermal runaway of chip. We never expereienced a such behavior well below 1000 fps. Possibly, this issue may have been or will be fixed for newer version.
 
 ### Setting region of interst
 You should choose an appropriate region of interest from the default pixel format 640x480(VGA) by using `sensor.__write_reg()`function,
