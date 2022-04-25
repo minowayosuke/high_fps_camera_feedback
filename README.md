@@ -43,7 +43,7 @@ You can use MicroPython and its libraries for image processing. Note that MicroP
 
 ?????? is a minimal code example for high speed image capturing.
 
-Note that these codes are tested only under the environment specified above.
+Note that these two codes are tested **only under the environment specified above.**
 
 Finally, ?????? is a minimal code example for high speed operation tested in the ???????? just for reference. The code was not used in our paper. We didn't conduct in-depth-test and don't gurantee its functioning.
 
