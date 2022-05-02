@@ -5,7 +5,7 @@ or [arXiv:2204.05506 [quant-ph]](https://arxiv.org/abs/2204.05506)
 if you find the codes useful, please consider citing the paper as:
 ************************
 
-The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). This nice system integrates a CMOS camera sensor with a microcontroller. So, we can implement a real-time processing of taken images and output some analogu/digital signals. You can get images at a high fps (> 500 fps) with real-time processing in an integrated microcontroller. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
+The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). This nice system integrates a CMOS camera sensor with a microcontroller. So, we can implement a real-time processing of taken images and output some analogu/digital signals. You can get images at a high fps (~ 1000 fps) with real-time processing in an integrated microcontroller. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
 
 The actual fps strongly depends on the size of the region-of-interest and the implementation of the image-processing.
 
@@ -17,7 +17,7 @@ The firmware version used in the paper was v3.5.2. IDE version was v2.4.0.
 
 ## Software
 ### Main idea to get higher fps
-To get higher fps, you need to restrict the region of interest. For example, we can reach ***well above 1000 fps*** for 32x20 pixels without any image processing. However, it's not recommended to operate at such a high speed because the DAC is working only at 1 kHz and above-1-kHz speed is useless for most the purposes. Additionally, we experienced a hung-up of IDE often for > 1000fps. We didn't check whether it's just a problem of IDE or some kind of thermal runaway of the chip. We never experienced such behavior well below 1000 fps. Possibly, this issue may have been or will be fixed for a newer version.
+To get higher fps, you need to restrict the region of interest. For example, we can reach ***well above 1000 fps*** for 32x20 pixels without any image processing. However, it may be not practical to operate at such a high speed because the DAC is working only at 1 kHz and above-1-kHz speed is useless for most the purposes. Additionally, we experienced a hung-up of IDE often for > 1000fps. We didn't check whether it's just a problem of IDE or some kind of thermal runaway of the chip. We never experienced such behavior well below 1000 fps. Possibly, this issue may have been or will be fixed for a newer version.
 
 ### Setting region of interest
 You should choose an appropriate region of interest from the default pixel format 640x480(VGA) by using `sensor.__write_reg()`function,
