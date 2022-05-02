@@ -4,7 +4,7 @@ Code for our paper: "textexttextext" doi???????????????
 if you find the codes useful, please consider citing the paper as:
 ************************
 
-The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). You can get images at a high fps (possibly > 500 fps) with real-time processing. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
+The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). You can get images at a high fps (possibly > 500 fps) with real-time processing in an integrated microcontroller. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
 
 The actual fps strongly depends on the size of the region-of-interest and the implementation of the image-processing.
 
