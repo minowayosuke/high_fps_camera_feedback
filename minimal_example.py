@@ -51,6 +51,7 @@ while(True):
     clock.tick()                       # Update the FPS clock.
 
     video = sensor.snapshot()          # Take a picture and return the image.
+    video_list = list(video[0:w])
 
 
     print(clock.fps())
