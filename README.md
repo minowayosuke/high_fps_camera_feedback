@@ -1,5 +1,5 @@
 # high_fps_camera_feedback
-Code for our paper: ["Imaging-based feedback cooling of a levitated nanoparticle" doi:10.1063/5.0095614](https://aip.scitation.org/doi/10.1063/5.0095614)
+Codes for our paper: ["Imaging-based feedback cooling of a levitated nanoparticle" doi:10.1063/5.0095614](https://aip.scitation.org/doi/10.1063/5.0095614)
 or [arXiv:2204.05506 [quant-ph]](https://arxiv.org/abs/2204.05506)
 
 if you find the codes useful, please consider citing the paper as:
@@ -45,11 +45,11 @@ before `sensor.snapshot()`.
 You can use MicroPython and its libraries for image processing. Note that MicroPython has limited functionality compared to normal Python. We used a micropython library called ulab, the MicroPython's equivalent of numpy. ulab's capability strongly depends on the firmware version. Also, some features of ulab seemed to be slower than expected. So, we used only a part of its functionality. We determined the levitated nanoparticle position using the centroid scheme as described in our paper. 
 
 ### Code examples
-?????? is the code for the feedback cooling used in the paper.
+feedback_cooling.py is the code for the feedback cooling used in the paper.
 
-?????? is a minimal code example for high-speed image capture.
+minimal_exapmle.py is a minimal code example for high-speed image capture.
 
 Note that these two codes are tested **only under the environment specified above.**
 
-Finally, ?????? is a minimal code example for high speed operation tested in the ???????? just for reference. The code was not used in our paper. We didn't conduct an in-depth-test and don't guarantee its functioning.
+Finally, we shortly tested the minimal code example for ???????? just for reference. The code itself was not used in our paper. We didn't conduct an in-depth-test and don't guarantee its functioning.
 
