@@ -1,4 +1,4 @@
-# Cold damping & Phase shift & UARTconect & DAC
+# Cold damping & Phase shift & UART output
 
 import sensor, time, image, math
 import pyb
