@@ -1,5 +1,5 @@
 # high_fps_camera_feedback
-Code for our paper: "textexttextext" doi???????????????
+Code for our paper: ["Imaging-based feedback cooling of a levitated nanoparticle" doi:10.1063/5.0095614](https://aip.scitation.org/doi/10.1063/5.0095614)
 or [arXiv:2204.05506 [quant-ph]](https://arxiv.org/abs/2204.05506)
 
 if you find the codes useful, please consider citing the paper as:
