@@ -5,6 +5,8 @@ or [arXiv:2204.05506 [quant-ph]](https://arxiv.org/abs/2204.05506)
 if you find the codes useful, please consider citing the paper as:
 Review of Scientific Instruments 93, 075109 (2022). https://doi.org/10.1063/5.0095614
 
+All the explanation here is based on the hardware, firmware and software version used in the paper (see below).
+
 The code is targeted for [OpenMV camera unit](https://openmv.io/) and written in MicroPython (MicroPython implements a subset of Python functionality). This nice system integrates a CMOS camera sensor with a microcontroller. So, we can implement a real-time processing of taken images and output some analogu/digital signals. You can get images at a high fps (~ 1000 fps) with real-time processing in an integrated microcontroller. The resulting signal can be output from the unit through DAC or DIO pins and can be used for various purposes e.g. feedback cooling of a levitated nano-oscillator for our case.
 
 The actual fps strongly depends on the size of the region-of-interest and the implementation of the image-processing.
