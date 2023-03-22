@@ -51,5 +51,5 @@ minimal_exapmle.py is a minimal code example for high-speed image capture.
 
 Note that these two codes are tested **only under the environment specified above.**
 
-Finally, we quickly checked the minimal code example with OpenMV Cam H7 Plus, global shutter caera module and firmware v4.3.1 just for reference. The code itself was not used in our paper. We didn't conduct an in-depth-test and don't guarantee its functioning.
+Finally, we quickly checked the minimal code example with OpenMV Cam H7 Plus, global shutter camera module and firmware v4.3.1 just for reference. The code itself was not used in our paper. We didn't conduct an in-depth-test and don't guarantee its functioning.
 
